@@ -1,0 +1,128 @@
+[
+  {
+    "file": "test_data\\data_1.root",
+    "name": "data_1.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_1.root",
+    "checksum": "5b696e5d22400bc55c68bdc650aed0d84e93ab5ad74d404020e744ef9d658665",
+    "timestamp": "2026-06-17T13:58:39.670992"
+  },
+  {
+    "file": "test_data\\data_10.root",
+    "name": "data_10.root",
+    "size_gb": 1.9278377294540405e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_10.root",
+    "checksum": "f2336612a8fdd84ba2d1cbdb818816b04008e451e441a6dc7be1a31b2ef8ed23",
+    "timestamp": "2026-06-17T13:58:39.678018"
+  },
+  {
+    "file": "test_data\\data_2.root",
+    "name": "data_2.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_2.root",
+    "checksum": "6ac61c73dee6967c8213b3c2c581e5f70f9b0210718d8d335a59d729d0c64cb7",
+    "timestamp": "2026-06-17T13:58:39.686432"
+  },
+  {
+    "file": "test_data\\data_3.root",
+    "name": "data_3.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_3.root",
+    "checksum": "cb3261c64d04d83a33cd210b39d5170ca2977f30a7cad2c3ae0c08389f4fc89d",
+    "timestamp": "2026-06-17T13:58:39.693135"
+  },
+  {
+    "file": "test_data\\data_4.root",
+    "name": "data_4.root",
+    "size_gb": 1.9185245037078857e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_4.root",
+    "checksum": "3808f73f6537d38df5642456163e5c7d2ebe58b9315fbe1d56cbd837b63a8f5d",
+    "timestamp": "2026-06-17T13:58:39.700460"
+  },
+  {
+    "file": "test_data\\data_5.root",
+    "name": "data_5.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_5.root",
+    "checksum": "0c28844aeec1314091905d44e2d7742058bb78e01d709d700877a9953d732931",
+    "timestamp": "2026-06-17T13:58:39.708109"
+  },
+  {
+    "file": "test_data\\data_6.root",
+    "name": "data_6.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_6.root",
+    "checksum": "9971fd84fb563c7386d4f0a7910e351b41ce835e887ad02418cd443fefe2de08",
+    "timestamp": "2026-06-17T13:58:39.717208"
+  },
+  {
+    "file": "test_data\\data_7.root",
+    "name": "data_7.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_7.root",
+    "checksum": "a5e34c1ab5df0f394733d69868de62e98dea3ce8a8eb30c6fc3e0adf4f0cd32b",
+    "timestamp": "2026-06-17T13:58:39.727205"
+  },
+  {
+    "file": "test_data\\data_8.root",
+    "name": "data_8.root",
+    "size_gb": 1.9650906324386597e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_8.root",
+    "checksum": "1aa57fb022826e4888abef1a39fcd9df82d27f727b15379b0ab0dd2be44adc20",
+    "timestamp": "2026-06-17T13:58:39.735982"
+  },
+  {
+    "file": "test_data\\data_9.root",
+    "name": "data_9.root",
+    "size_gb": 1.9185245037078857e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//data_9.root",
+    "checksum": "bb4491b2de7200e267dcb529d32e5adb9af9fe58a6c83d08f84892d483860383",
+    "timestamp": "2026-06-17T13:58:39.741845"
+  },
+  {
+    "file": "test_data\\test_data_1.root",
+    "name": "test_data_1.root",
+    "size_gb": 2.1327286958694458e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//test_data_1.root",
+    "checksum": "6bb7ba482c6730850fd3a021fdbe28b419c94c5247ad7816f5c077af60e2d6fa",
+    "timestamp": "2026-06-17T13:58:39.748696"
+  },
+  {
+    "file": "test_data\\test_data_2.root",
+    "name": "test_data_2.root",
+    "size_gb": 2.1327286958694458e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//test_data_2.root",
+    "checksum": "ab2cd39239d80b63b9c4486498efd202e48c490c00fd2363e80a2a8cc06fdd56",
+    "timestamp": "2026-06-17T13:58:39.758965"
+  },
+  {
+    "file": "test_data\\test_data_3.root",
+    "name": "test_data_3.root",
+    "size_gb": 2.1327286958694458e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//test_data_3.root",
+    "checksum": "d85e40280684c187dfb14fb9233a612b3024770ff851ea1554a27ee6a2c5e9fa",
+    "timestamp": "2026-06-17T13:58:39.768639"
+  },
+  {
+    "file": "test_data\\test_data_5.root",
+    "name": "test_data_5.root",
+    "size_gb": 2.1327286958694458e-07,
+    "tape": "./tape_library//backup_20260617_135839.tar",
+    "local_copy": "./local_backups//test_data_5.root",
+    "checksum": "5ecd2edf4c67881a8ec076dea6a38c85b05aaae41beca0565544d27d96d8eeb2",
+    "timestamp": "2026-06-17T13:58:39.778519"
+  }
+]

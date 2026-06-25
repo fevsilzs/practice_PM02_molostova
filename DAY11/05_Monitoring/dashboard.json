@@ -1,0 +1,86 @@
+{
+  "metrics": [
+    {
+      "name": "backup_last_success_timestamp_seconds",
+      "help": "Время последнего успешного бэкапа",
+      "type": "gauge"
+    },
+    {
+      "name": "backup_status",
+      "help": "Статус бэкапа (1 - success, 0 - fail)",
+      "type": "gauge"
+    },
+    {
+      "name": "backup_duration_seconds",
+      "help": "Длительность выполнения бэкапа",
+      "type": "histogram"
+    },
+    {
+      "name": "backup_size_bytes",
+      "help": "Размер бэкапа в байтах",
+      "type": "gauge"
+    }
+  ],
+  "alerts": [
+    {
+      "name": "BackupJobFailed",
+      "expr": "backup_status == 0",
+      "for": "5m",
+      "severity": "critical",
+      "annotations": {
+        "summary": "Бэкап {{ $labels.job_name }} провалился"
+      }
+    },
+    {
+      "name": "BackupTooOld",
+      "expr": "(time() - backup_last_success_timestamp_seconds) > 86400",
+      "for": "5m",
+      "severity": "warning",
+      "annotations": {
+        "summary": "Бэкап старше 24 часов (RPO нарушен)"
+      }
+    },
+    {
+      "name": "TapeSpaceNearFull",
+      "expr": "(node_filesystem_avail_bytes{mountpoint=\"/mnt/tape_library\"} / node_filesystem_size_bytes{mountpoint=\"/mnt/tape_library\"}) < 0.15",
+      "for": "10m",
+      "severity": "critical",
+      "annotations": {
+        "summary": "На ленте осталось < 15% места"
+      }
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "required": ["job_name", "status", "size_bytes", "duration_seconds", "timestamp", "checksum_md5"],
+    "properties": {
+      "job_name": {
+        "type": "string",
+        "enum": ["postgres_wal", "physics_tape_backup", "hdf5_archive"]
+      },
+      "status": {
+        "type": "string",
+        "enum": ["success", "partial", "failed"]
+      },
+      "size_bytes": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "duration_seconds": {
+        "type": "number",
+        "minimum": 0
+      },
+      "timestamp": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "checksum_md5": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{32}$"
+      },
+      "error_message": {
+        "type": "string"
+      }
+    }
+  }
+}
